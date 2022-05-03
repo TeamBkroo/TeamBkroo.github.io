@@ -9,7 +9,6 @@ body ,html{
 	z-index: 0;
 	position: absolute;
 	width: 100%;
-	animation: change 5s infinite ease-in-out;
 }
 
  /*Download title*/
@@ -18,13 +17,16 @@ body ,html{
 	position: absolute;
 	margin-top:250px;
 	margin-left: 100px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 25px;
 	color: #BFB78F;
 	background-color: #011F26;
-	border-radius: 900px;
+	border-radius: 600px;
 	font-size: 23px;
+	
+}
+.D_title h1{
 	font-family: cursive;	
+
 }
 
  /*Description title*/
@@ -33,8 +35,7 @@ body ,html{
 	position: absolute;
 	margin-top:430px;
 	margin-left: 100px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 25px;
 	font-size: 25px;
 	color: #A5A692;
 	background-color:#011F26;
@@ -46,6 +47,7 @@ body ,html{
 	margin: 10px;
 	z-index: 0;
 	position: absolute;
+
 }
 
 
@@ -58,14 +60,16 @@ body ,html{
 	border-color: #025E73;
 	border-width: 6px;
 	background-color:#011F26;
-	font-size: 23px;
+	font-size: 30px;
+	padding: 25px;
+	
+}
+#D_button p{
 	font-family: fantasy;
 }
 
-
 #D_button:hover{
 	border-style: none;
-    color: #F2A71B;
 	background-color: #025E73;
 
 }
@@ -118,29 +122,4 @@ body ,html{
 }
 
 
-.Header{
-	background-color: #665941;
-	position:fixed;
-	z-index: 3;
-	width: 100%;
-	height: 50px;
-	opacity: 0.9;
-}
 
-
-.head{
-	padding-left: 80%;
-	text-decoration: none;
-	font-size: 22px;
-	color:#F2A71B ;
-}
-
-
-#homHRF{
-	padding-left: 30px;
-}
-
-
-#dis{
-	color: #F2A71B;
-}
