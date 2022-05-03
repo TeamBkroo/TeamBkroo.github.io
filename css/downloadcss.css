@@ -116,3 +116,30 @@ body ,html{
 ::-webkit-scrollbar-thumb:hover {
   background: #665941; 
 }
+
+
+.Header{
+	background-color: #665941;
+	position:fixed;
+	z-index: 3;
+	width: 100%;
+	height: 50px;
+}
+
+
+.head{
+	padding-left: 80%;
+	text-decoration: none;
+	font-size: 22px;
+	color:#F2A71B ;
+}
+
+
+#homHRF{
+	padding-left: 30px;
+}
+
+
+#dis{
+	color: #F2A71B;
+}
