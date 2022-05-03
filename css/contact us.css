@@ -7,7 +7,7 @@
 
 }
 body{
-    background: url("IMG-20220501-WA0006.jpg")no-repeat;
+    background: url("../photos/background.jpeg")no-repeat;
     background-size: cover;
 }
 .container{
