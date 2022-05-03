@@ -2,7 +2,7 @@ document.write(
     `<nav>
             <div class="navcontainer">
                 <a href="index.html"><div class="logo">
-                    Souq
+                Bkroo store
                 </div></a>
                 <ul>
                     <li><a href="index.html">Home</a></li>
