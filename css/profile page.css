@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(134, 125, 125);
+}
+
+.topbar{
+    background-color: rgb(91, 145, 145);
+    overflow: hidden;
+    font-size: 30px;
+}
+.contain{
+    border: 5px rgb(222, 170, 135) solid;
+    background: rgb(41, 129, 100);
+}
+.about{
+    border: rgb(29, 28, 28) solid 5px;
+    background:teal;
+}
+.name{
+    border: rgb(15, 15, 15) solid 2px;
+}
+.mail{
+    border: rgb(10, 10, 10) solid 2px;
+}
+.phone{
+    border: rgb(8, 8, 8) solid 2px;
+}
+.address{
+    border: rgb(7, 7, 7) solid 2px;
+}

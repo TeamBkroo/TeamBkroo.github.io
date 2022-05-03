@@ -1,0 +1,171 @@
+ /*Left Div*/
+
+#leftC{
+	position: absolute;
+	background: #C4C7A7;
+	z-index: 1;
+	top: 250px;
+	right: 250px;
+	left: 210px;
+	width: 520px;
+	height: 450px;
+}
+
+ /*Right Div "Log in form " */
+#rightC{
+	position:absolute;
+	z-index: 3;
+	background: #989990;
+	top: 250px;
+	right: 250px;
+	width: 520px;
+	height: 450px;
+	margin-left: 20px;
+	overflow: hidden;	
+}
+
+
+.bottom{
+	margin-top: 40px;	
+	position: fixed;
+}
+
+
+.ceanter{
+	margin-top: 1px;
+	z-index: 1;
+	position: absolute;
+	float: left;
+	padding-top: 90px;
+}
+
+
+.inputs{
+	width: 120px;
+}
+
+
+.elemnt{
+	border: 4px;
+	border: solid;
+	border-color: #025E73;
+	border-radius: 5px;
+	width: 250px;
+	height: 30px;		
+	text-align: center;
+	margin-bottom: 10px;
+}
+#vid{
+	position:fixed;
+	z-index: 1;
+}
+
+.ceanter .elemnt:hover{
+	border-color: #BFB78F;
+	transition: .9s;
+	border-width: 5px;
+}
+
+
+.inputs{
+	border-radius: 60px;
+	border-color: #025E73;
+	border-width: 5px;
+	width: 150px;
+	height: 40px;
+	transition: .5s;
+}
+
+
+.inputs:hover{
+	border-color: #F2A71B;
+}
+
+
+h1{
+	margin-top: -12px;
+	font-size: 40px;
+	color: #F2A71B;
+	font-family: cursive;	
+}
+
+
+.upperText{
+	font-size: 20px;
+}
+
+
+.lowerText{
+	font-size: 20px;
+	font-family: monospace;		
+}
+
+
+#j_fam{
+	text-decoration: underline;
+	color: #F2A71B;
+}
+
+
+#f_pass{
+	text-decoration: none;
+	color: #F2A71B;
+}
+
+
+body ,html{
+	height: 100%;
+	margin: 0;
+}
+
+
+#Background{
+	width: 1520px;
+	height: 900px;
+	  background-repeat: no-repeat;
+}
+
+#formDIV{
+	padding-bottom: 3px;
+}
+
+
+.video{
+	position: absolute;
+	z-index: 2;
+	top: 300px;
+	right: 250px;
+	left: 210px;
+	width: 520px;
+	height: 450p
+}
+
+
+.lowerText title{
+	width: 30px;
+	height: 40px;
+	transform: 0.1s;
+	background-color: green;
+}
+
+ /*scrollbar*/
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #025E73; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #F2A71B; 
+  border-radius: 50px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #665941; 
+}
+

@@ -1,0 +1,582 @@
+/* variables */
+
+:root{
+    --maincolor: #1f1a1e;
+    --secondcolor: #4d57a2;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: "cairo";
+    src: url(fonts/Cairo/Cairo-VariableFont_wght.ttf);
+}
+
+.page{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: 60px 60px 770px 450px 400px 400px 280px;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav nav nav"
+    "head head head head head head head head head head"
+    "sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1 sec1"
+    "sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2 sec2"
+    "sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3 sec3"
+    "sec4 sec4 sec4 sec4 sec4 sec4 sec4 sec4 sec4 sec4"
+    "fotter fotter fotter fotter fotter fotter fotter fotter fotter fotter";
+}
+
+.container{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    /*background-color: #aaa;*/
+}
+
+/* navigation bar */
+
+nav{
+    grid-area: nav;
+    background-color: #eee;
+    box-shadow: 0px 1px 3px 0px #00000059;
+
+}
+
+nav .container{
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logo{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: -2px;
+    font-weight: bold;
+    color:var(--maincolor);
+    height: 100%;
+}
+
+.container a{
+    display: block;
+    text-decoration: none;
+}
+
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+nav ul li {
+    padding: 10px 0px;
+    margin: 10px 20px; 
+
+}
+
+nav ul li a{
+    display: block;
+    color: var(--maincolor);
+    text-decoration: none;
+
+}
+
+nav li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--maincolor);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+nav ul li:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+
+/* head bar */
+
+.head{
+    grid-area: head;
+    margin-top: 10px;
+}
+
+.head .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cart{
+    width: 45px;
+    height: 45px;
+}
+.input{
+    height: 45px;
+    width: 400px;
+    position: relative;
+}
+
+.search-box{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0px 0 rgba(32, 33, 36, .28);
+    cursor: text;
+    font-size: 16px;
+    height: 45px;
+    width: 400px;
+    outline: none;  
+    border: 1px solid rgb(182, 182, 182);
+    padding: 0px 70px 0px 10px;
+
+}
+
+.exit{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    right: 38px;
+}
+
+.exit img{
+    height: 15px;
+    margin: auto;
+}
+
+.search{
+    display: flex;
+    background-color: var(--maincolor);
+    width: 45px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.search img {
+    height: 30px;
+    margin: auto
+}
+
+.button1,
+.button2
+{
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px ;
+    border: 2px solid var(--maincolor) ;
+    border-radius: 20px;
+    color: var(--maincolor);
+    transition: 0.5s 0.2s;
+}
+.head .buttons{
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.head .buttons a{
+    text-decoration: none;
+}
+
+/* Section one */
+
+.section1{
+    grid-area: sec1;
+    color: var(--maincolor);
+    display: flex;
+    background-image: url("../photos/back.jpg");
+    background-size: 600px;
+    background-position: 580px center;
+    background-repeat: no-repeat;
+}
+
+.section1 .container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-transform: capitalize;
+}
+
+.section1 h1{
+    letter-spacing: -2px;
+}
+
+.text{
+    margin: 20px 0px;
+    width: 500px; 
+}
+
+.section1 .button3{
+    font-size: 15px;
+    font-weight: bold;
+    padding: 11px;
+    text-align: center;
+    width: 100px;
+    height: 45px;
+    border: 2px solid var(--secondcolor) ;
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s 0.1s;
+    background-color: var(--secondcolor);
+}
+
+.section1 a{
+    text-decoration: none;
+    display: block;
+} 
+
+.button1:hover,.button2:hover,.button3:hover{
+    color: var(--maincolor);
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/* Section two */
+
+.section2{
+    grid-area: sec2;
+    display: flex;
+}
+
+.section2 .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    max-width: 1000px;
+}   
+  .section2 img{
+    height: 300px;
+    vertical-align: middle;
+}
+
+  .mySlides {
+    display: none;
+  }
+  
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: var(--maincolor);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev{
+    left: 0px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+  }
+  
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align:center
+  }
+  
+  .active,.dot:hover {
+    background-color: #717171;
+  }
+
+/* Section three */
+
+.section3{
+    grid-area: sec3;
+    display: flex;
+    text-transform: capitalize;
+}
+
+.section3 .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.section3 .container .row1{
+    display: grid;
+    width: 100%;
+    height: 120px;
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    gap: 10px 80px;
+    text-align: center;
+}
+
+.section3 .container .row2{
+    display: grid;
+    width: 100%;
+    height: 120px;
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2, auto);
+    justify-content: center;
+    gap: 10px 80px;
+    text-align: center;
+}
+
+.section3 .container .row1 div,
+.section3 .container .row2 div{
+    background-color: var(--secondcolor);
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    transition: 0.3s 0.1s;
+}
+
+.section3 .container .row1 div:hover,
+.section3 .container .row2 div:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.section3 a{
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+.section3 img{
+    width: 80px;
+    height: 80px;
+}
+
+.section3 .product3 img{
+    width: 70px;
+    height: 70px;
+    margin: auto;
+}
+.section3 .product4 img{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+}
+
+
+/* Section Four */
+
+.section4{
+    grid-area: sec4;
+    display: flex;
+}
+.section4 .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.section4 .prodcontainer{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0px 20px;
+
+}
+
+.section4 .product{
+    display: grid;
+    width: 200px;
+    height: 270px;
+    padding: 20px;
+    border-radius: 10px;
+    gap: 5px;
+    grid-template-rows: 180px 25px 30px;
+    align-items: center;
+    background-color: white;
+    box-shadow:0px 0px 4px 0px #00000040;
+    display: none;
+}
+
+.section4 .product img{
+    width: 100%;
+}
+
+.section4 .product-name{
+    font-size: 18px;
+}
+
+.section4 .product div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section4 .product button{
+    background-color: var(--secondcolor);
+    border: none;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+    outline: none;
+}
+
+.section4 .prev , .section4 .next {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    color: var(--maincolor);
+    padding: 14px;
+    text-align: center;
+    margin: 0px;
+}
+
+.section4 .prev:hover , .section4 .next:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Footer */
+
+footer{
+    grid-area: fotter;
+    display: flex;
+    background-color: #eee;
+    box-shadow: 0px 1px 3px 0px #00000059;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 30px;
+    gap: 0px 50px;
+    align-items: flex-start;
+}
+
+
+.box1 li{
+    display: inline-block;
+    margin-right:10px;
+}
+
+.links img{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.links ul li {
+    margin-top: 20px;
+    background-color: var(--maincolor);;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s 0.2s;
+}
+
+.links ul .tw:hover{
+    background-color: #1da1f2;
+}
+.links ul .face:hover{
+    background-color: #1877f2;
+}
+.links ul .yt:hover{
+    background-color: #ff0000;
+}
+
+.links .copyright{
+    color: var(--maincolor);;
+    margin-top: 20px;
+}
+
+.links .copyright span{
+    font-weight: bold;
+}
+
+.box2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px ;
+}
+.box2 h2,.box3 h2{
+    padding-bottom: 20px ;
+}
+
+.box2 a , .box2 h2 ,.box3 h2{
+    text-decoration: none;
+    color: var(--maincolor);;
+}
+
+.box2 li{
+    list-style: none;
+    border-bottom: 1px solid #444;
+    padding: 8px 0px ;
+
+}
+
+.box2 a{
+    display: block;
+    transition: 0.5s 0.2s;
+}
+
+.box2 li a:active,
+.box2 li a:hover{
+    padding-left: 10px;
+    color: black;
+}
+
+.box3{
+    padding-left: 50px;
+}
+
+.box3 div{
+    margin-bottom: 10px;
+}
+
+.box3 img{
+    width: 20px;
+    margin: 5px 5px -3px 0px;
+}
+
+.box3 span{
+    display: inline-block;
+    font-size: 18px;
+    color: var(--maincolor);
+}
+

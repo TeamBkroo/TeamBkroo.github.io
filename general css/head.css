@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.head{
+    grid-area: head;
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+
+.head .headcontainer{
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cart{
+    width: 45px;
+    height: 45px;
+}
+.input{
+    height: 45px;
+    width: 400px;
+    position: relative;
+}
+
+.search-box{
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 0 0px 0 rgba(32, 33, 36, .28);
+    cursor: text;
+    font-size: 16px;
+    height: 45px;
+    width: 400px;
+    outline: none;  
+    border: 1px solid rgb(182, 182, 182);
+    padding: 0px 70px 0px 10px;
+
+}
+
+.exit{
+    display: flex;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 0px;
+    right: 38px;
+}
+
+.exit img{
+    height: 15px;
+    margin: auto;
+}
+
+.search{
+    display: flex;
+    background-color: black;
+    width: 45px;
+    height: 45px;
+    border-radius: 0px 5px 5px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.search img {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+}
+
+.button1,
+.button2
+{
+    width: 100px;
+    height: 45px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px ;
+    border: 2px solid black ;
+    border-radius: 20px;
+    color: black;
+    transition: 0.5s 0.2s;
+}
+.head .buttons{
+    display: flex;
+    width: 210px;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.head .buttons a{
+    text-decoration: none;
+}

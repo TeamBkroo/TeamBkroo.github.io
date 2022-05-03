@@ -1,0 +1,118 @@
+ /*For background*/
+body ,html{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#background{
+	z-index: 0;
+	position: absolute;
+	width: 100%;
+	animation: change 5s infinite ease-in-out;
+}
+
+ /*Download title*/
+.D_title{
+	z-index: 1;
+	position: absolute;
+	margin-top:250px;
+	margin-left: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #BFB78F;
+	background-color: #011F26;
+	border-radius: 900px;
+	font-size: 23px;
+	font-family: cursive;	
+}
+
+ /*Description title*/
+.D_description{
+	z-index: 1;
+	position: absolute;
+	margin-top:430px;
+	margin-left: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 25px;
+	color: #A5A692;
+	background-color:#011F26;
+	border-radius: 20px;
+}
+
+
+.D_button{
+	margin: 10px;
+	z-index: 0;
+	position: absolute;
+}
+
+
+#D_button{
+	position: absolute;
+	margin-top: 780px;
+	margin-left: 160px;
+	border-radius: 40px;
+	border-style: none;
+	border-color: #025E73;
+	border-width: 6px;
+	background-color:#011F26;
+	font-size: 23px;
+	font-family: fantasy;
+}
+
+
+#D_button:hover{
+	border-style: none;
+    color: #F2A71B;
+	background-color: #025E73;
+
+}
+
+ /*    img 1 and img 2 "Soon picture "   */
+#img1{
+	position: absolute;
+	margin-top: 780px;
+	margin-left: 600px;
+	border-radius: 12px;
+	width: 280px;
+	height: 90px;
+}
+
+
+#img2{
+	position: absolute;
+	margin-top: 780px;
+	margin-left: 1090px;
+	border-radius: 12px;
+	width: 280px;
+	height: 90px;
+}
+
+
+.Soon:hover{
+	border-style: dotted;
+	border-color:#F2A71B;
+}
+
+ /*scrollbar*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #011F26; 
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #F2A71B; 
+  border-radius: 20px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #665941; 
+}
