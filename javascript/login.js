@@ -24,6 +24,8 @@ function ERROR_MSG() {
 function validation() {
 	localStorage.setItem('Login_Local_username',document.getElementById('useremail').value);
 	localStorage.setItem('Login_Local_password',document.getElementById('userpassword').value);
+	document.getElementById('Messg').innerHTML="Now insert again and press login <br> again to verified your information";
+	document.getElementById('Messg').style.color='#BFB78F';
 	
 
 	if(Login_username == Siginup_username){
