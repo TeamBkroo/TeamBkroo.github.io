@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/shopping cart.css">
+    <link rel="stylesheet" href="general css/nav.css">
+    <link rel="stylesheet" href="general css/footer.css">
 </head>
 <body>
-
+    <script src="general css/nav.js"></script>
+  <div class="cart-page">
+      <table>
+          <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Subtotal</th>
+          </tr>
+          <tr>
+              <td>
+                  <div class="cart-info">
+                      <img src="photos/products/laptop.png" alt="">
+                      <div>
+                          <p>product</p>
+                          <small>Price: $50.00</small>
+                          <br>
+                          <a href="">Remove</a>
+                      </div>
+                  </div>
+              </td>
+              <td><input type="number" value="1" min="1"></td>
+              <td>$50.00</td>
+          </tr>
+          <tr>
+              <td>
+                  <div class="cart-info">
+                      <img src="photos/products/television.png" alt="">
+                      <div>
+                          <p>product</p>
+                          <small>Price: $90.00</small>
+                          <br>
+                          <a href="">Remove</a>
+                      </div>
+                  </div>
+              </td>
+              <td><input type="number" value="1" min="1"></td>
+              <td>$90.00</td>
+          </tr>
+          <tr>
+              <td>
+                  <div class="cart-info">
+                      <img src="photos/products/phone.png" alt="">
+                      <div>
+                          <p>product</p>
+                          <small>Price: $40.00</small>
+                          <br>
+                          <a href="">Remove</a>
+                      </div>
+                  </div>
+              </td>
+              <td><input type="number" value="1" min="1"></td>
+              <td>$40.00</td>
+          </tr>
+      </table>
+      <div class="total-price">
+          <table>
+              <tr>
+                  <td>Subtotal</td>
+                  <td>$180.00</td>
+              </tr>
+              <tr>
+                  <td>Tax</td>
+                  <td>$20.00</td>
+              </tr>
+              <tr>
+                  <td>Total</td>
+                  <td>$200.00</td>
+              </tr>
+          </table>
+      </div>
+      <button><a href="payment.html">buy</a></button>
+  </div>
+  <script src="general css/footer.js"></script>
 </body>
 </html>
