@@ -8,13 +8,13 @@ document.write(
             <input class="search-box" id="search-box" onkeyup="searchProduct()"
             placeholder="Search products.."></input>
             <ul class="list">
-                <a href="photos/products/phone.png"><li  class="prod">phone</li></a>
-                <a href="photos/products/fridge.png" ><li class="prod" >fridge</li></a>
-                <a href="photos/products/microwave.png" ><li class="prod">microwave</li></a>
-                <a href="photos/products/air.png" ><li class="prod">air</li></a>
-                <a href="photos/products/laptop.png" ><li class="prod">laptop</li></a>
-                <a href="photos/products/television.png" ><li class="prod">televison</li></a>
-            </ul>
+            <a href="products/phones.html"><li  class="prod">phone</li></a>
+            <a href="products/fridge.html" ><li class="prod" >fridge</li></a>
+            <a href="products/microwave.html" ><li class="prod">microwave</li></a>
+            <a href="products/air conditioner.html" ><li class="prod">air conditioner</li></a>
+            <a href="products/laptop.html" ><li class="prod">laptop</li></a>
+            <a href="products/television.html" ><li class="prod">televison</li></a>
+        </ul>
                     <div class="exit" onclick="del()">
                         <img src="photos/icons/exit.png">
                     </div>
