@@ -3,7 +3,6 @@
     <head>
         <title>Bkroo store</title>
         <link rel="stylesheet" href="css/Home.css">
-       <!-- <script src="Home.js"></script>-->
     </head>
     <body>
         <div class="page">
@@ -27,21 +26,32 @@
                         <a href="shopping cart.html"><img src="photos/icons/shopping cart.png" class="cart"></a>
 
                         <div class="input">
-                            <input class="search-box" >
-                                <a href="#">
-                                    <div class="exit">
+                            <input class="search-box" id="search-box" onkeyup="searchProduct()"
+                            placeholder="Search products.."></input>
+                            <ul class="list">
+                                <a href="products/phones.html"><li  class="prod">phone</li></a>
+                                <a href="products/fridge.html" ><li class="prod" >fridge</li></a>
+                                <a href="products/microwave.html" ><li class="prod">microwave</li></a>
+                                <a href="products/air conditioner.html" ><li class="prod">air conditioner</li></a>
+                                <a href="products/laptop.html" ><li class="prod">laptop</li></a>
+                                <a href="products/television.html" ><li class="prod">televison</li></a>
+                            </ul>
+                                    <div class="exit" onclick="del()">
                                         <img src="photos/icons/exit.png">
                                     </div>
                                     <div class="search">
                                         <img src="photos/icons/search.png">
+                                        
                                     </div>
-                                </a>
-                                </input>
+                                
+                                
                         </div>
-                            
+                            <script src="javascript/search.js"></script>
+
                         <div class="buttons">
                             <a href="login.html"><div class="button1">Login</div></a>
                             <a href="signup.html"><div class="button2">Sign up</div></a>
+                            <a href="profile page.html"><img src="photos/icons/profile.png" class="profile"></a>
                         </div>
                  </div>
             </div>
@@ -50,13 +60,16 @@
 
             <div class="section1">
                 <div class="container">
+
+                        <div class="text">
+                            <h1>welcome to our shopping website</h1>
+                            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellendus aut quisquam quos sunt itaque illo obcaecati iste repudiandae officia! 
+                                Aliquid saepe molestiae ipsum quidem
+                            </div>
+                            <a href="products.html"><div class="button3">Shop Now</div></a>
+                        </div>    
                     
-                    <h1>welcome to our shopping website</h1>
-                    <div class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellendus aut quisquam quos sunt itaque illo obcaecati iste repudiandae officia! 
-                        Aliquid saepe molestiae ipsum quidem animi, 
-                        repudiandae assumenda impedit explicabo fuga!</div>
-                        <a href=""><div class="button3">Shop Now</div></a>
                 </div>
             </div>
             
@@ -103,11 +116,11 @@
                     <div class="row2">
                         <div class="product5"><a href="products/laptop.html"><img src="photos/products/laptop.png"></a></div>
                         <div class="product6"><a href="products/washer.html"><img src="photos/products/washer.png"></a></div>
-                        <div class="product7"><a href="products/air conditional.html"><img src="photos/products/air.png"></a></div>
+                        <div class="product7"><a href="products/air conditioner.html"><img src="photos/products/air.png"></a></div>
 
                         <span>laptop</span>
                         <span>washer </span>
-                        <span>air conditional</span>
+                        <span>air conditioner</span>
                     </div>
 
                     
@@ -123,55 +136,55 @@
                     <div class="prodcontainer">
 
                         <div class="product">
-                            <a href="products/air conditional/Air Conditional (1).html"><img src="photos/products/air.png"></a>
+                            <a href="products.html"><img src="photos/products/air.png"></a>
                             <span class="product-name">product 1</span>
                             <div>
                                 <span class="product-price">15$</span>
-                                <button>Add to cart</button>
+                                <a href="shopping cart.html"><button>Add to cart</button></a>
                             </div>
                         </div>
                         <div class="product">
-                            <a href="products/fridge/fridge (1).html"><img src="photos/products/fridge.png"></a>
+                            <a href="products.html"><img src="photos/products/fridge.png"></a>
                             <span class="product-name">product 2</span>
                             <div>
                                 <span class="product-price">15$</span>
-                                <button>Add to cart</button>
+                                <a href="shopping cart.html"><button>Add to cart</button></a>
                             </div>
                         </div>
                         <div class="product">
-                            <a href="products/television/television (1).html"><img src="photos/products/television.png"></a>
+                            <a href="products.html"><img src="photos/products/television.png"></a>
                             <span class="product-name">product 3</span>
                             <div>
                                 <span class="product-price">15$</span>
-                                <button>Add to cart</button>
+                                <a href="shopping cart.html"><button>Add to cart</button></a>
                             </div>
                         </div>
                         <div class="product">
-                            <a href="products/microwave/microwave (1).html"><img src="photos/products/microwave.png"></a>
+                            <a href="products.html"><img src="photos/products/microwave.png"></a>
                             <span class="product-name">product 4</span>
                             <div>
                                 <span class="product-price">15$</span>
-                                <button>Add to cart</button>
+                                <a href="shopping cart.html"><button>Add to cart</button></a>
                             </div>
                         </div>
 
                         
                                 <div class="product" >
-                                    <a href="products/laptop/laptop (1).html.html"><img src="photos/products/laptop.png"></a>
+                                    <a href="products.html"><img src="photos/products/laptop.png"></a>
                                     <span class="product-name">product 5</span>
                                     <div>
                                         <span class="product-price">15$</span>
-                                        <button>Add to cart</button>
+                                        <a href="shopping cart.html"><button>Add to cart</button></a>
                                     </div>
                                 </div>
                        
                             
                                 <div class="product">
-                                    <a href="products/phone/phone (1).html"><img src="photos/products/phone.png"></a>
+                                    <a href="products.html"><img src="photos/products/phone.png"></a>
                                     <span class="product-name">product 6</span>
                                     <div>
                                         <span class="product-price">15$</span>
-                                        <button>Add to cart</button>
+                                        <a href="shopping cart.html"><button>Add to cart</button></a>
                                     </div>
                                 </div>
                             
@@ -190,9 +203,9 @@
                                 <div class="logo">Bkroo store</div>
                                 <div class="links">
                                     <ul>
-                                        <li class="face"><a href="#"><img src="photos/icons/face.png"></a></li>
-                                        <li class="tw"><a href="#"><img src="photos/icons/tw.png"></a></li>
-                                        <li class="yt"><a href="#"><img src="photos/icons/yt.png" ></a></li>
+                                        <li class="face"><a href="www.facebook.com"><img src="photos/icons/face.png"></a></li>
+                                        <li class="tw"><a href="www.twitter.com"><img src="photos/icons/tw.png"></a></li>
+                                        <li class="yt"><a href="www.youtube.com"><img src="photos/icons/yt.png" ></a></li>
                                     </ul>
                                     <div class="copyright">&copy; 2022 <span>Team-Bkroo</span> All Right Reseved</div>
                                 </div>
@@ -201,10 +214,9 @@
                             <div class="box2">
                                 <h2>Links</h2>
                                 <ul>
-                                    <li><a href="about us.html">About us</a></li>
                                     <li><a href="contact us.html">Contact us</a></li>
+                                    <li><a href="about us.html">About us</a></li>
                                     <li><a href="feedback.html">Feedback</a></li>
-                                    <li><a href="join us.html">Join us</a></li>
                                     <li><a href="download.html">Download our app</a></li>
                                 </ul>
                             </div>
