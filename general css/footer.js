@@ -5,9 +5,9 @@ document.write(
             <div class="logo">Bkroo store</div>
             <div class="links">
                 <ul>
-                    <li class="face"><a href="#"><img src="photos/icons/face.png"></a></li>
-                    <li class="tw"><a href="#"><img src="photos/icons/tw.png"></a></li>
-                    <li class="yt"><a href="#"><img src="photos/icons/yt.png" ></a></li>
+                    <li class="face"><a href="www.facebook.com"><img src="photos/icons/face.png"></a></li>
+                    <li class="tw"><a href="www.twitter.com"><img src="photos/icons/tw.png"></a></li>
+                    <li class="yt"><a href="www.youtube.com"><img src="photos/icons/yt.png" ></a></li>
                 </ul>
                 <div class="copyright">&copy; 2022 <span>Bkroo-Team</span> All Right Reseved</div>\
             </div>
@@ -15,10 +15,9 @@ document.write(
         <div class="box-2">
             <h2>Links</h2>
             <ul>
-                <li><a href="about us.html">About us</a></li>
                 <li><a href="contact us.html">Contact us</a></li>
+                <li><a href="about us.html">About us</a></li>
                 <li><a href="feedback.html">Feedback</a></li>
-                <li><a href="join us.html">join us</a></li>
                 <li><a href="download.html">Download our app</a></li>
             </ul>
         </div>
