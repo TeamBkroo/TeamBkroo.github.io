@@ -23,7 +23,7 @@ html{
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(10,1fr);
-    grid-template-rows: 60px 60px 770px 450px 400px 400px 280px;
+    grid-template-rows: 60px 60px 770px 450px 400px 400px 250px;
     grid-template-areas: 
     "nav nav nav nav nav nav nav nav nav nav"
     "head head head head head head head head head head"
@@ -119,7 +119,7 @@ nav ul li:hover::after{
     justify-content: space-around;
 }
 
-.cart{
+.cart,.profile{
     width: 45px;
     height: 45px;
 }
@@ -131,7 +131,7 @@ nav ul li:hover::after{
 
 .search-box{
     background: white;
-    border-radius: 5px;
+    border-radius: 2px;
     box-shadow: 0 0 0px 0 rgba(32, 33, 36, .28);
     cursor: text;
     font-size: 16px;
@@ -140,8 +140,26 @@ nav ul li:hover::after{
     outline: none;  
     border: 1px solid rgb(182, 182, 182);
     padding: 0px 70px 0px 10px;
-
 }
+
+.list{
+    list-style: none;
+    background-color: white;
+    border: 1px solid rgb(182, 182, 182);
+    border-top: none;
+    border-bottom: none;
+    text-transform: capitalize;
+}
+
+.prod{
+    text-decoration: none;
+    padding: 4px 0px 4px 10px ;
+    font-size: 17px;
+    border-bottom: 1px solid rgb(182, 182, 182) ;
+    color: var(--maincolor);
+    display: none;
+}
+
 
 .exit{
     display: flex;
@@ -188,13 +206,15 @@ nav ul li:hover::after{
 }
 .head .buttons{
     display: flex;
-    width: 210px;
+    width: 270px;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 .head .buttons a{
+    display: block;
     text-decoration: none;
+    height: 45px;
 }
 
 /* Section one */
@@ -203,10 +223,7 @@ nav ul li:hover::after{
     grid-area: sec1;
     color: var(--maincolor);
     display: flex;
-    background-image: url("../photos/back.jpg");
-    background-size: 600px;
-    background-position: 580px center;
-    background-repeat: no-repeat;
+
 }
 
 .section1 .container{
@@ -215,6 +232,10 @@ nav ul li:hover::after{
     align-items: flex-start;
     justify-content: center;
     text-transform: capitalize;
+    background-image: url(../photos/back.jpg);
+    background-size: 550px;
+    background-position: right center;
+    background-repeat: no-repeat;
 }
 
 .section1 h1{
@@ -222,8 +243,11 @@ nav ul li:hover::after{
 }
 
 .text{
-    margin: 20px 0px;
-    width: 500px; 
+    width: 480px; 
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .section1 .button3{
@@ -235,14 +259,16 @@ nav ul li:hover::after{
     height: 45px;
     border: 2px solid var(--secondcolor) ;
     border-radius: 20px;
-    color: white;
     transition: 0.3s 0.1s;
+    color: white;
     background-color: var(--secondcolor);
 }
 
 .section1 a{
+    width: 100px;
+    height: 45px;
     text-decoration: none;
-    display: block;
+
 } 
 
 .button1:hover,.button2:hover,.button3:hover{
@@ -454,6 +480,14 @@ nav ul li:hover::after{
     color: white;
     border-radius: 5px;
     outline: none;
+    transition: 0.5 0.2;
+    height: 30px;
+    width: 75px;
+}
+
+.section4 .product button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
 
 .section4 .prev , .section4 .next {
