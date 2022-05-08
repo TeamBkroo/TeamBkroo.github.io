@@ -38,7 +38,7 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block"; 
   dots[slideIndex].className += " active";
   slideIndex++;
-  setTimeout(showSlides, 3000); 
+  setTimeout(showSlides, 4000); 
 }
 
 function movingslides(n){
