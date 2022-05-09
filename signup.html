@@ -4,7 +4,7 @@
         <title>sign up</title>
         <link rel="stylesheet" href="css/sign up.css">
         <meta charset="utf-8"/>
-        <script src="javascript/login.js"></script>
+     
     </head>
     <script type="text/javascript">
         function aler() {
@@ -18,17 +18,19 @@
            <img src="photos/media/guest-icon-png-18.png" alt="user icon">
            <h1>Sign up</h1>
            <form>
-               <input type="text"  class="input-box" placeholder="full name" required>
-               <input type="text" class="input-box" placeholder="phone number" required>
-               <input type="text" class="input-box" placeholder="your address" required>
-               <input type="email"  id="usernameSS" class="input-box" placeholder="your username" required>
-               <input type="password" id="passwordSS"  class="input-box" placeholder="your password ONLY LETTERS" required>
+               <input type="text"     id="NameOnSignup"      class="input-box" placeholder="full name" required>
+               <input type="text"     id="PhoneOnSignup"     class="input-box" placeholder="phone number" required>
+               <input type="text"     id="AddressOnSignup"   class="input-box" placeholder="your address" required>
+               <input type="email"    id="usernameSS"        class="input-box" placeholder="your email" required>
+               <input type="password" id="passwordSS"        class="input-box" placeholder="your password" required>
              
-               <button type="button" class="signup-btn" onclick="siginup()+ aler()" >sign up</button>
+               <button type="button" class="signup-btn" onclick="siginup() + TransfareFun() + aler()" >sign up</button>
               
               
                <p>Do you have account?<a href="login.html">login</a></p>
            </form>
+              <script src="javascript/login.js"></script>
+              <script src="javascript/ProfilePage.js"></script>
        </div> 
       
     </body>
