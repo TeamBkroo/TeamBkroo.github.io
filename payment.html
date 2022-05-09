@@ -3,36 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <title>Payment page</title>
-    <link rel="stylesheet" href="Css/style.css"/>
+    <link rel="stylesheet" href="css/payment.css"/>
+    <link rel="stylesheet" href="general css/nav.css">
+    <link rel="stylesheet" href="general css/footer.css">
 </head>
 <body>
-    <form action="" method="post">
-        <h1>Confirm Your Payment</h1>
-           <label for="name">Payer Name</label><br>
-           <input class="box1" type="text" name="name" id="name" placeholder="Enter Name" autofocus><br>
-           <label for="email">Email</label><br>
-           <input class="box1" type="email" name="email" id="email" placeholder="Enter Your Email"><br>
-           <label for="cardnum">Card Number</label><br>
-           <input class="box1" type="number" name="number" id="cardnum" placeholder=".... .... .... ...."><br>
-           <div class="div1">
-              <label for="cardex">Card Expiry Date</label><br>
-              <input class="box2" type="date" name="month" id="cardex"><br>
-            </div>
-            <div class="div1">
-               <label for="cardcvc">Card CVC</label><br>
-               <input class="box2" type="password" name="cvc" id="cardcvc" placeholder="CVC"><br> 
-            </div>
-            <br>
-            <div class="div2">
-                <img class="img1" src="photos/payment/IMG-20220503-WA0006.jpg" alt="">  
-                <img class="img2" src="photos/payment/IMG-20220503-WA0007.jpg" alt="">
-                <img class="img3" src="photos/payment/IMG-20220503-WA0008.jpg" alt="">
-            </div>
-            <br>
-               <button type="submit" onclick="alert('Thanks \n You Will Get Message Soon...');">Pay Now</button>
-               <a href="">
-                  <button type="reset">Close</button>
-               </a>
-    </form>   
+   <script src="general css/nav.js"></script>
+   <form action="" method="post">
+      <h1>Confirm Your Payment</h1>
+         <label for="name">Payer Name</label><br>
+         <input class="box1" type="text" name="name" id="name" placeholder="Enter Name" autofocus><br>
+         <label for="email">Email</label><br>
+         <input class="box1" type="email" name="email" id="email" placeholder="Enter Your Email"><br>
+         <label for="cardnum">Card Number</label><br>
+         <input class="box1" type="number" name="number" id="cardnum" placeholder=".... .... .... ...."><br>
+         <div class="div1">
+            <label for="cardex">Card Expiry Date</label><br>
+            <input class="box2" type="date" name="month" id="cardex"><br>
+          </div>
+          <div class="div1">
+             <label for="cardcvc">Card CVC</label><br>
+             <input class="box2" type="password" name="cvc" id="cardcvc" placeholder="CVC"><br> 
+          </div>
+          <br>
+          <div class="div2">
+              <img class="img1" src="photos/payment/IMG-20220503-WA0006.jpg" alt="">  
+              <img class="img2" src="photos/payment/IMG-20220503-WA0007.jpg" alt="">
+              <img class="img3" src="photos/payment/IMG-20220503-WA0008.jpg" alt="">
+          </div>
+          <br>
+             <button type="submit" onclick="alert('Thanks /n You Will Get Message Soon...')">Pay Now</button>
+             <a href="index.html">
+                <button type="reset">Close</button>
+             </a>
+  </form>     
+    <script src="general css/footer.js"></script>
 </body>
 </html>
