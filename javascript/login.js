@@ -1,3 +1,10 @@
+/*
+	This script used for 2 things 
+		1)Log in page
+		2)Sigin up page       					*/
+
+
+
 // Global variable 	
 	var Siginup_username=localStorage.getItem("Siginup_Local_username");
 	var Siginup_password=localStorage.getItem("Siginup_Local_password");
@@ -13,12 +20,14 @@ function siginup() {
 	var Siginup_password=localStorage.getItem("Siginup_Local_password");
 }
 
-//This function used to display an error message if the user input something wrong
+//This function used to display an error message if the user input was something wrong
 function ERROR_MSG() {
 	document.getElementById('Messg').innerHTML='Error: your password or username wrong <br>Press Ctrl+ F5 twice and try again';
 	document.getElementById('Messg').style.color='#800000';
 	return;
 }
+
+                                                         
 //This function used in log in page to verfied if the user sigin in or not
 function validation() {
 	localStorage.setItem('Login_Local_username',document.getElementById('useremail').value);
@@ -35,9 +44,7 @@ function validation() {
 				return ;
 			}
 		}
-		
-		
-		
+			
 		//JSON.stringify is for make sure transfare type to string 
 
 		if(JSON.stringify(Login_password) === JSON.stringify(Siginup_password)){
@@ -53,3 +60,4 @@ function validation() {
 	
 	
 }
+
