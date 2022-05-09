@@ -53,6 +53,14 @@ button:hover {
     font-size: 17px;
     cursor: pointer;
 }
+
+button a{
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    color:black;
+}
+
 .div2{
     display: inline-block;
     
