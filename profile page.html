@@ -16,16 +16,30 @@
     </div>
     <h1 class="about">YOUR PROFILE</h1><hr>
     <div class="contain">
-        <h5>FULL NAME</h5>
-    <div class="name">AboBakr Ahmed AbdAlghfar</div><hr>
+
+
+    <h5>FULL NAME</h5>
+    <div id="nameOnPP" class="name">AboBakr Ahmed AbdAlghfar</div><hr>
+    <script type="text/javascript">document.getElementById('nameOnPP').innerHTML=localStorage.getItem('NAME');</script>
+
+
     <h5>E-mail</h5>
-    <div class="mail">ahmdabwbkr920@gmail.com</div><hr>
+    <div id="emailOnPP" class="mail">ahmdabwbkr920@gmail.com</div><hr>
+    <script type="text/javascript">document.getElementById('emailOnPP').innerHTML=localStorage.getItem('EMIL');</script>
+
+
     <h5>Phone</h5>
-    <div class="phone">01115180854</div><hr>
+    <div id="phoneOnPP" class="phone">01115180854</div><hr>
+    <script type="text/javascript">document.getElementById('phoneOnPP').innerHTML=localStorage.getItem('PHONE');</script>
+    
+
+
     <h5>Address</h5>
-    <div class="address">6october,giza,egypt</div>
+    <div id="addressOnPP" class="address">6october,giza,egypt</div>
+    <script type="text/javascript">document.getElementById('addressOnPP').innerHTML=localStorage.getItem('ADDRESS');</script>
     
     </div>
+    <script src="javascript/ProfilePage.js"></script>
     <script src="general css/footer.js"></script>
 </body>
 </html>
