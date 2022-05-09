@@ -10,20 +10,16 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+
 html{
     scroll-behavior: smooth;
-}
-
-@font-face {
-    font-family: "cairo";
-    src: url(fonts/Cairo/Cairo-VariableFont_wght.ttf);
 }
 
 .page{
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(10,1fr);
-    grid-template-rows: 60px 60px 770px 450px 400px 400px 250px;
+    grid-template-rows: 60px 60px 700px 450px 400px 400px 250px;
     grid-template-areas: 
     "nav nav nav nav nav nav nav nav nav nav"
     "head head head head head head head head head head"
@@ -38,7 +34,6 @@ html{
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    /*background-color: #aaa;*/
 }
 
 /* navigation bar */
@@ -173,6 +168,10 @@ nav ul li:hover::after{
 .exit img{
     height: 15px;
     margin: auto;
+}
+
+.exit:hover{
+    cursor: pointer;
 }
 
 .search{
@@ -480,14 +479,13 @@ nav ul li:hover::after{
     color: white;
     border-radius: 5px;
     outline: none;
-    transition: 0.5 0.2;
+    transition: 0.3s 0.1s;
     height: 30px;
     width: 75px;
 }
 
 .section4 .product button:hover{
     cursor: pointer;
-    transform: scale(1.1);
 }
 
 .section4 .prev , .section4 .next {
