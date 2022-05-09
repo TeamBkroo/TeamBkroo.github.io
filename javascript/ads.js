@@ -14,7 +14,7 @@ function showSlides(n) {
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
 
-  if(n == NaN || n == undefined ){
+  if(n == undefined){
     n=slideIndex;
   }
   else{
