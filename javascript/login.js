@@ -19,8 +19,7 @@ function ERROR_MSG() {
 	document.getElementById('Messg').style.color='#800000';
 	return;
 }
-
-//This fun used in log in page to verfied if the user sigin in or not
+//This function used in log in page to verfied if the user sigin in or not
 function validation() {
 	localStorage.setItem('Login_Local_username',document.getElementById('useremail').value);
 	localStorage.setItem('Login_Local_password',document.getElementById('userpassword').value);
@@ -28,7 +27,7 @@ function validation() {
 	document.getElementById('Messg').style.color='#BFB78F';
 	
 
-	if(Login_username == Siginup_username){
+	if(JSON.stringify(Login_username) == JSON.stringify(Siginup_username)){
 		//This if condition for check if the user really insert a value or just click login without value
 		if( Login_username == '' || Login_username == null){
 			if(Login_password =='' || Login_password == null){
@@ -36,8 +35,12 @@ function validation() {
 				return ;
 			}
 		}
-	
-		if(Login_password === Siginup_password){
+		
+		
+		
+		//JSON.stringify is for make sure transfare type to string 
+
+		if(JSON.stringify(Login_password) === JSON.stringify(Siginup_password)){
 			return window.location.href ="index.html";
 		}
 
